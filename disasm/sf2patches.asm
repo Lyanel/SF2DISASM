@@ -21,7 +21,7 @@ EASY_CONFIGURATION_MODE: equ 0
 ;
 ;     0 = OFF, 1 = ON
 ;
-EASY_DEBUG_MODE: equ 1
+EASY_DEBUG_MODE: equ 0
 
 ; ---------------------------------------------------------------------------
 
