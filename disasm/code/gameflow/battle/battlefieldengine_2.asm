@@ -443,20 +443,20 @@ SpellRange2:    dc.b 8
                 dc.b 1
                 dc.b $FF
 
-				if (SPELL_RANGE_EXPANSION=1)
+                if (SPELL_RANGE_EXPANSION=1)
                 ;dcb.b $9,0
-				wordAlign
-				else
+                wordAlign
+                else
 SpellRange3:    dc.b $C
                 dc.b 0
                 dc.b 3
                 dc.b 1
                 dc.b 2
                 dc.b 2
-                dc.b 2
                 dc.b 1
                 dc.b 3
                 dc.b 0
+                dc.b 2
                 dc.b $FF
                 dc.b 1
                 dc.b $FE
@@ -472,7 +472,7 @@ SpellRange3:    dc.b $C
                 dc.b 1
                 dc.b $FF
                 dc.b 2
-				endif
+                endif
 
 ; =============== S U B R O U T I N E =======================================
 
