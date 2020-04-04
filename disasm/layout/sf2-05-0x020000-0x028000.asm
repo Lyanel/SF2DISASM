@@ -84,4 +84,7 @@ j_SuspendGame:
                 include "code\common\tech\graphics\specialspritesanims.asm"    ; Special Sprites Animations
                 include "code\specialscreens\suspend\suspend.asm"    ; Suspend functions
                 include "code\specialscreens\witchend\witchend.asm"    ; Witch end functions
+                if (SPELL_RANGE_EXPANSION=1)
+                include "code\gameflow\battle\spellrangehack.asm"    ; Additional spell range 3->7
+                endif
                 align $28000

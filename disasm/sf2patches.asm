@@ -21,7 +21,7 @@ EASY_CONFIGURATION_MODE: equ 0
 ;
 ;     0 = OFF, 1 = ON
 ;
-EASY_DEBUG_MODE: equ 0
+EASY_DEBUG_MODE: equ 1
 
 ; ---------------------------------------------------------------------------
 
@@ -64,3 +64,13 @@ FULL_CLASS_NAMES: equ 0
 ;     0 = OFF, 1 = ON
 ;
 FORCE_MEMBERS_EXPANSION: equ 0
+
+; ---------------------------------------------------------------------------
+
+; patch Spell_Range_Expansion
+;
+;     Enable the use of 4 additional range for spells, items & weapons. (0->3 become 0->7)
+;
+;     0 = OFF, 1 = ON
+;
+SPELL_RANGE_EXPANSION: equ 0
