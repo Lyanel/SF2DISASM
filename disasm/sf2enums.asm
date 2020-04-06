@@ -390,7 +390,7 @@ ITEMDEF_OFFSET_PRICE: equ $6
 ITEMDEF_OFFSET_TYPE: equ $8
 ITEMDEF_OFFSET_SPELL: equ $9
 ITEMDEF_OFFSET_STATINFO1: equ $A
-ITEM_MAX_IDX: equ $7F
+ITEM_MAX_IDX: equ $FF	; Edited
 
 ; ---------------------------------------------------------------------------
 
