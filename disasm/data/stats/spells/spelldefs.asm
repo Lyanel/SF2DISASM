@@ -327,7 +327,7 @@ SpellDefs:      ; index      enum Spells : SPELL_*
                 mpCost 2
                 animation MAGIC_DRAIN
                 properties &
-                    TYPE_SPECIAL
+                    TYPE_STATUS|AFFECTEDBYSILENCE
                 range 1, 2
                 radius 0
                 power 0
@@ -336,7 +336,7 @@ SpellDefs:      ; index      enum Spells : SPELL_*
                 mpCost 5
                 animation MAGIC_DRAIN
                 properties &
-                    TYPE_SPECIAL
+                    TYPE_STATUS|AFFECTEDBYSILENCE
                 range 1, 3
                 radius 0
                 power 12
