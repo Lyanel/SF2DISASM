@@ -85,3 +85,11 @@ WeaponSprites:  weaponSprite 255, 0     ; Leather Glove
                 weaponSprite 8, 17      ; Katana
                 weaponSprite 8, 17      ; Ninja Katana
                 weaponSprite 8, 17      ; Gisarme
+                ; ------------------------------- Added
+                weaponSprite 255, 0     ; Rapid Canon
+                weaponSprite 255, 0     ; Vampire Quarrel
+                weaponSprite 255, 0     ; Dragonbone Quarrel
+                weaponSprite 20, 39     ; Kendama
+                weaponSprite 255, 0     ; Shade Knuckles
+                weaponSprite 255, 0     ; Gold Knuckles
+                ; -------------------------------

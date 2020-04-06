@@ -10,18 +10,26 @@ AllyStats18:    forClass ACHR
                 spellList 
                     
                 forClass SNIP
-                hpGrowth 31, 81, LINEAR
-                mpGrowth 0, 0, NONE
-                atkGrowth 20, 32, LINEAR
-                defGrowth 21, 62, LINEAR
-                agiGrowth 24, 65, LINEAR
-                spellList 
+                hpGrowth 31, 75, LINEAR
+                mpGrowth 0, 71, LINEAR
+                atkGrowth 20, 43, LINEAR
+                defGrowth 21, 68, LINEAR
+                agiGrowth 24, 82, LINEAR
+                spellList &
+                    22, E_WILL, &
+                    34, E_WILL|LV2, &
+                    42, E_WILL|LV3, &
+                    26, DISPEL, &
+                    47, DISPEL|LV2, &
+                    31, E_LOVE, &
+                    39, E_LOVE|LV2, &
+                    53, E_LOVE|LV3
                     
                 forClass BRGN
-                hpGrowth 31, 81, LINEAR
-                mpGrowth 0, 0, NONE
-                atkGrowth 20, 35, LINEAR
-                defGrowth 21, 80, LINEAR
-                agiGrowth 24, 57, LINEAR
+                hpGrowth 31, 78, LINEAR
+                mpGrowth 0, 0, LINEAR
+                atkGrowth 20, 67, LINEAR
+                defGrowth 21, 89, LINEAR
+                agiGrowth 24, 52, LINEAR
                 spellList 
                     

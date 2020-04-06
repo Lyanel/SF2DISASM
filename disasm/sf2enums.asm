@@ -99,7 +99,7 @@ COM_STATUS_MASK_ATTACK: equ $C000
 ; ---------------------------------------------------------------------------
 
 ; enum CharDef
-CHARDEF_STARTDATA_ENTRYSIZE: equ $6
+CHARDEF_STARTDATA_ENTRYSIZE: equ $A	; Edited
 CHAR_CLASS_LASTNONPROMOTED: equ $B
 CHAR_CLASS_FIRSTPROMOTED: equ $C
 CHAR_CLASS_EXTRALEVEL: equ $14
@@ -254,6 +254,8 @@ CLASS_MNST: equ $1C
 CLASS_RBT: equ $1D
 CLASS_GLM: equ $1E
 CLASS_RDBN: equ $1F
+CLASS_MGNT: equ $20	; Added
+CLASS_SCUB: equ $21	; Added
 CLASS_NONE: equ $FF
 
 ; ---------------------------------------------------------------------------
@@ -353,16 +355,16 @@ ENEMYAI_THRESHOLD_HEAL3: equ $1C
 ; ---------------------------------------------------------------------------
 
 ; enum Icon_Offsets
-ICON_OFFSET_CRACKS: equ $6F00
+ICON_OFFSET_CRACKS: equ $F240		; Edited
 
 ; ---------------------------------------------------------------------------
 
 ; enum IconDef_Idx
 ICONIDX_NOTHING: equ $7F
-ICONIDX_UNARMED: equ $80
-ICONIDX_HEAL: equ $82
-ICONIDX_JEWEL_OF_LIGHT: equ $92
-ICONIDX_JEWEL_OF_EVIL: equ $93
+ICONIDX_UNARMED: equ $100			; Edited
+ICONIDX_HEAL: equ $102				; Edited
+ICONIDX_JEWEL_OF_LIGHT: equ $141	; Edited
+ICONIDX_JEWEL_OF_EVIL: equ $142		; Edited
 
 ; ---------------------------------------------------------------------------
 
@@ -426,11 +428,14 @@ EQUIPFLAG_RBT: equ $20000000
 EQUIPFLAG_GLM: equ $40000000
 EQUIPFLAG_RDBN: equ $80000000
 
+EQUIPFLAG_MGNT: equ $100000000 ; Added
+EQUIPFLAG_SCUB: equ $200000000 ; Added
+
 ; ---------------------------------------------------------------------------
 
 ; enum EquipFlags_Other
 EQUIPFLAG_NONE: equ $0
-EQUIPFLAG_ALL: equ $FFFFFFFF
+EQUIPFLAG_ALL: equ $FFFFFFFFF ; edited
 
 ; ---------------------------------------------------------------------------
 
@@ -597,7 +602,13 @@ ITEM_LIFE_RING: equ $7C
 ITEM_COTTON_BALLOON: equ $7D
 ITEM_CHIRRUP_SANDALS: equ $7E
 ITEM_NOTHING: equ $7F
-ITEM_EQUIPPED: equ $80
+ITEM_RAPID_CANON: equ $80		; Added
+ITEM_VAMPIRE_QUARREL: equ $81	; Added
+ITEM_DRAGBONE_QUARREL: equ $82	; Added
+ITEM_KENDAMA: equ $83			; Added
+ITEM_SHADE_KNUCKLES: equ $84	; Added
+ITEM_GOLD_KNUCKLES: equ $85		; Added
+ITEM_EQUIPPED: equ $4000		; Edited
 ITEM_BROKEN: equ $8000
 
 ; ---------------------------------------------------------------------------
@@ -632,23 +643,24 @@ ITEMTYPE_BIT_MAGICAL: equ $7
 ; ---------------------------------------------------------------------------
 
 ; enum ItemEntry
-ITEM_OFFSET_IDXANDEQUIPBYTE: equ $1
-ITEM_MASK_IDXANDBROKEN: equ $807F
+;ITEM_OFFSET_IDXANDEQUIPBYTE: equ $1 Removed
+ITEM_MASK_IDXANDBROKEN: equ $80FF	; Edited
 
 ; ---------------------------------------------------------------------------
 
 ; enum ItemEntry_Idx
-ITEM_IDX_BITSIZE: equ $7
-ITEM_IDX_GOLD_CHESTS_START: equ $80
+ITEM_IDX_BITSIZE: equ $8			; Edited
+ITEM_IDX_GOLD_CHESTS_START: equ $100 ; Edited
 
 ; ---------------------------------------------------------------------------
 
 ; enum ItemEntry_Props
-ITEM_BIT_EQUIPPED: equ $7
+ITEM_BIT_EQUIPPED: equ $E		; Edited
+ITEM_UPPERBIT_EQUIPPED: equ $6	; Added
 ITEM_UPPERBIT_BROKEN: equ $7
 ITEM_BIT_ENEMYUSE: equ $D
 ITEM_BIT_BROKEN: equ $F
-ITEM_MASK_IDX: equ $7F
+ITEM_MASK_IDX: equ $FF			; Edited
 
 ; ---------------------------------------------------------------------------
 
@@ -906,6 +918,15 @@ SPELL_KIWI: equ $29
 SPELL_SHINE: equ $2A
 SPELL_ODDEYE: equ $2B
 SPELL_NOTHING: equ $3F
+SPELL_FUUJIN: equ $2C	; Added
+SPELL_HYOTON: equ $2D	; Added
+SPELL_ANSUZ: equ $2E	; Added
+SPELL_FEHU: equ $2F		; Added
+SPELL_HAGALAZ: equ $30	; Added
+SPELL_SOWILO: equ $31	; Added
+SPELL_E_HOPE: equ $32	; Added
+SPELL_E_LOVE: equ $33	; Added
+SPELL_E_WILL: equ $34	; Added
 SPELL_LV2: equ $40
 SPELL_LV3: equ $80
 SPELL_LV4: equ $C0
@@ -916,7 +937,7 @@ SPELL_LV4: equ $C0
 SPELL_OFFSET_IDX: equ $0
 SPELL_MASK_RESIST: equ $3
 SPELL_OFFSET_LV: equ $6
-SPELL_DEFS_COUNTER: equ $63
+SPELL_DEFS_COUNTER: equ $FC	; Edited
 SPELL_MASK_LV: equ $C0
 SPELL_MASK_ENTRY: equ $FF
 SPELL_MASK_ALLRESIST: equ $C0FF
@@ -1520,6 +1541,8 @@ ALLYBATTLESPRITE_PHNX: equ $1C
 ALLYBATTLESPRITE_BWNT: equ $1D
 ALLYBATTLESPRITE_WFBR: equ $1E
 ALLYBATTLESPRITE_SNIP: equ $1F
+ALLYBATTLESPRITE_MGNT: equ $20	; Added
+ALLYBATTLESPRITE_SCUB: equ $21	; Added
 ALLYBATTLESPRITE_NONE: equ $FF
 
 ; ---------------------------------------------------------------------------
@@ -1716,8 +1739,8 @@ MAPSPRITE_ZYNK_PROMO: equ $37
 MAPSPRITE_CHAZ_PROMO: equ $38
 MAPSPRITE_LEMON_SPECIAL: equ $39
 MAPSPRITE_CLAUDE_PROMO: equ $3A
-MAPSPRITE_POSE1: equ $3B
-MAPSPRITE_BLANK: equ $3C
+MAPSPRITE_POSE1: equ $E8	; Edited
+MAPSPRITE_BLANK: equ $ED	; Edited
 MAPSPRITE_RAFT: equ $3D
 MAPSPRITE_CARAVAN: equ $3E
 MAPSPRITE_EFFECT1: equ $3F
@@ -1889,13 +1912,13 @@ MAPSPRITE_BEDOE_MINISTER: equ $E4
 MAPSPRITE_BEDOE_SOLDIER: equ $E5
 MAPSPRITE_CHICK: equ $E6
 MAPSPRITE_PACALON_KING: equ $E7
-MAPSPRITE_PACALON_PRINCESS: equ $E8
+MAPSPRITE_PACALON_PRINCESS: equ $3B	; Edited
 MAPSPRITE_PACALON_SOLDIER: equ $E9
 MAPSPRITE_PACALON_MAID: equ $EA
 MAPSPRITE_HEN: equ $EB
 MAPSPRITE_BIRDMAN: equ $EC
-MAPSPRITE_END_LIST: equ $ED
-MAPSPRITE_FREE_SPOT1: equ $EE
+MAPSPRITE_END_LIST: equ $EE	; Edited
+MAPSPRITE_FREE_SPOT1: equ $3C	; Edited
 MAPSPRITE_FREE_SPOT2: equ $EF
 MAPSPRITE_SPECIAL0: equ $F0
 MAPSPRITE_SPECIAL1: equ $F1
@@ -1952,8 +1975,8 @@ PORTRAIT_ZYNK: equ $1A
 PORTRAIT_CHAZ: equ $1B
 PORTRAIT_LEMON: equ $1C
 PORTRAIT_CLAUDE: equ $1D
-PORTRAIT_ELIS: equ $1E
-PORTRAIT_ASTRAL: equ $1F
+PORTRAIT_ELIS: equ $35	; Edited
+PORTRAIT_ASTRAL: equ $36	; Edited
 PORTRAIT_GRANSEAL_KING: equ $20
 PORTRAIT_SAILOR: equ $21
 PORTRAIT_PRIEST: equ $22
@@ -1974,6 +1997,9 @@ PORTRAIT_GERHALT_PROMO: equ $31
 PORTRAIT_SLADE_PROMO: equ $32
 PORTRAIT_KIWI_PROMO: equ $33
 PORTRAIT_BOWIE_PAINTING: equ $34
+PORTRAIT_MINISTER: equ $37	; Added
+PORTRAIT_LATAURA: equ $1E	; Added
+PORTRAIT_SUHELL: equ $1F	; Added
 PORTRAIT_NONE: equ $FF
 PORTRAIT_DEFAULT: equ $FFFF
 
@@ -2019,6 +2045,8 @@ ALLY_ZYNK: equ $1A
 ALLY_CHAZ: equ $1B
 ALLY_LEMON: equ $1C
 ALLY_CLAUDE: equ $1D
+ALLY_LATAURA: equ $1E	; Added
+ALLY_SUHELL: equ $1F	; Added
 
 ; ---------------------------------------------------------------------------
 

@@ -10,10 +10,18 @@ AllyStats10:    forClass BDMN
                 spellList 
                     
                 forClass BDBT
-                hpGrowth 35, 89, LATE
-                mpGrowth 0, 0, NONE
-                atkGrowth 24, 42, LINEAR
-                defGrowth 23, 68, LINEAR
-                agiGrowth 29, 70, LINEAR
-                spellList 
+                hpGrowth 35, 82, LATE
+                mpGrowth 0, 70, LATE
+                atkGrowth 24, 37, LINEAR
+                defGrowth 23, 82, LINEAR
+                agiGrowth 29, 74, LINEAR
+                spellList &
+                    22, FUUJIN, &
+                    34, FUUJIN|LV2, &
+                    45, FUUJIN|LV3, &
+                    26, SLOW, &
+                    43, SLOW|LV2, &
+                    29, HYOTON, &
+                    37, HYOTON|LV2, &
+                    52, HYOTON|LV3
                     

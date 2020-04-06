@@ -9,32 +9,33 @@ AllyStats15:    forClass PRST
                 agiGrowth 6, 29, LINEAR
                 spellList &
                     1, HEAL, &
-                    5, HEAL|LV2, &
-                    8, BLAST, &
-                    12, BOOST, &
-                    16, BLAST|LV2, &
-                    22, HEAL|LV3, &
-                    26, BLAST|LV3, &
-                    30, BOOST|LV2, &
-                    33, AURA, &
-                    37, BLAST|LV4, &
-                    41, AURA|LV2, &
-                    55, AURA|LV3, &
-                    60, AURA|LV4
+                    13, HEAL|LV2, &
+                    29, HEAL|LV3, &
+                    41, HEAL|LV4, &
+                    16, MUDDLE, &
+                    44, MUDDLE|LV2, &
+                    10, AURA, &
+                    26, AURA|LV2, &
+                    38, AURA|LV3, &
+                    59, AURA|LV4, &
+                    6, BLAZE, &
+                    20, BLAZE|LV2, &
+                    34, BLAZE|LV3, &
+                    49, BLAZE|LV4
                     
                 forClass VICR
-                hpGrowth 33, 92, LATE
-                mpGrowth 38, 91, MIDDLE
-                atkGrowth 19, 23, MIDDLE
-                defGrowth 20, 45, EARLYANDLATE
-                agiGrowth 21, 62, LINEAR
+                hpGrowth 33, 87, LATE
+                mpGrowth 38, 76, MIDDLE
+                atkGrowth 19, 28, MIDDLE
+                defGrowth 20, 71, EARLYANDLATE
+                agiGrowth 21, 77, LINEAR
                 useFirstSpellList
                     
                 forClass MMNK
-                hpGrowth 33, 92, LATE
-                mpGrowth 38, 71, MIDDLE
-                atkGrowth 19, 46, MIDDLE
-                defGrowth 20, 55, LATE
-                agiGrowth 21, 62, LINEAR
+                hpGrowth 33, 93, LATE
+                mpGrowth 38, 73, MIDDLE
+                atkGrowth 19, 43, MIDDLE
+                defGrowth 20, 77, LATE
+                agiGrowth 21, 68, LINEAR
                 useFirstSpellList
                     

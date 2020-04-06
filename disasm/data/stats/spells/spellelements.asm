@@ -31,12 +31,12 @@ SpellElementsTable:
                 spellElement UNDEFINED1 ; HEALTH
                 spellElement UNDEFINED1 ; B.ROCK
                 spellElement UNDEFINED1 ; LASER
-                spellElement UNDEFINED1 ; KATON
-                spellElement UNDEFINED1 ; RAIJIN
+                spellElement FIRE		; KATON, Edited
+                spellElement LIGHTNING  ; RAIJIN, Edited
                 spellElement WIND       ; DAO
                 spellElement FIRE       ; APOLLO
                 spellElement ICE        ; NEPTUN
-                spellElement UNDEFINED1 ; ATLAS
+                spellElement LIGHTNING  ; ATLAS, Edited
                 spellElement UNDEFINED1 ; POWDER
                 spellElement UNDEFINED1 ; G.TEAR
                 spellElement UNDEFINED1 ; HANNY
@@ -48,3 +48,14 @@ SpellElementsTable:
                 spellElement FIRE       ; KIWI
                 spellElement UNDEFINED1 ; SHINE
                 spellElement LIGHTNING  ; ODDEYE
+                ; ------------------------------- Added
+                spellElement WIND  		; FUUJIN
+                spellElement ICE   		; HYOTON
+                spellElement WIND  		; ANSUZ
+                spellElement FIRE  		; FEHU
+                spellElement ICE  		; HAGALAZ
+                spellElement LIGHTNING 	; SOWILO
+                spellElement UNDEFINED1 ; EARTH HOPE
+                spellElement UNDEFINED1 ; EARTH LOVE
+                spellElement STATUS 	; EARTH WILL
+                ; ------------------------------- 

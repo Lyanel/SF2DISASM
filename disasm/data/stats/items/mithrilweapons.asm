@@ -24,21 +24,23 @@ MithrilWeaponLists:
                     4, ATLAS_AXE, &
                     1, HEAT_AXE
                     
+                ; ------------------------------- Edited
                 mithrilWeapons &
-                    16, MYSTERY_STAFF, &
-                    8, FREEZE_STAFF, &
-                    4, GREAT_ROD, &
-                    1, SUPPLY_STAFF
+                    16, FREEZE_STAFF, &
+                    8, MYSTERY_STAFF, &
+                    4, SUPPLY_STAFF, &
+                    1, MAGE_STAFF
                     
                 mithrilWeapons &
-                    16, MYSTERY_STAFF, &
-                    8, GODDESS_STAFF, &
-                    4, GREAT_ROD, &
-                    1, HOLY_STAFF
+                    16, GODDESS_STAFF, &
+                    8, MYSTERY_STAFF, &
+                    4, HOLY_STAFF, &
+                    1, WISH_STAFF
+                ; ------------------------------- 
                     
                 mithrilWeapons &
                     16, GRAND_CANNON, &
-                    8, GRAND_CANNON, &
+                    8, DRAGBONE_QUARREL, & ; Edited
                     4, HYPER_CANNON, &
                     1, BUSTER_SHOT
                     
@@ -50,7 +52,7 @@ MithrilWeaponLists:
                     
                 mithrilWeapons &
                     16, GIANT_KNUCKLES, &
-                    8, GIANT_KNUCKLES, &
-                    4, MISTY_KNUCKLES, &
-                    1, MISTY_KNUCKLES
+                    8, MISTY_KNUCKLES, & ; Edited
+                    4, GOLD_KNUCKLES, & ; Edited
+                    1, SHADE_KNUCKLES ; Edited
                     

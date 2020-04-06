@@ -667,12 +667,19 @@ startLevel:	macro
 	dc.b \1
 	endm
 	
-startItems:	macro
+startItems:    macro	; Edited
+    if (EXPANDED_ROM=0)
 	defineBitfield.b ITEM_,\1
 	defineBitfield.b ITEM_,\2
 	defineBitfield.b ITEM_,\3
 	defineBitfield.b ITEM_,\4
-	endm
+    else
+	defineBitfield.w ITEM_,\1
+	defineBitfield.w ITEM_,\2
+	defineBitfield.w ITEM_,\3
+	defineBitfield.w ITEM_,\4
+    endif
+    endm
 	
 	
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;

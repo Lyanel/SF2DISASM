@@ -10,16 +10,18 @@ AllyStats05:    forClass THIF
                 spellList 
                     
                 forClass NINJ
-                hpGrowth 28, 90, LATE
-                mpGrowth 0, 50, LINEAR
-                atkGrowth 29, 53, LATE
-                defGrowth 25, 82, LATE
-                agiGrowth 25, 72, LATE
+                hpGrowth 28, 97, LATE
+                mpGrowth 0, 58, LINEAR
+                atkGrowth 29, 55, LATE
+                defGrowth 25, 88, LATE
+                agiGrowth 25, 62, LATE
                 spellList &
-                    24, KATON, &
-                    29, KATON|LV2, &
-                    34, RAIJIN, &
-                    39, RAIJIN|LV2, &
-                    45, KATON|LV3, &
-                    52, RAIJIN|LV3
+                    23, KATON, &
+                    36, KATON|LV2, &
+                    47, KATON|LV3, &
+                    27, DESOUL, &
+                    49, DESOUL|LV2, &
+                    30, HYOTON, &
+                    38, HYOTON|LV2, &
+                    53, HYOTON|LV3
                     

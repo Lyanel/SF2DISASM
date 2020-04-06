@@ -35,3 +35,5 @@ ClassTypesTable:; enum ClassTypes : CLASSTYPE_*
                 classType PROMO         ; RBT
                 classType PROMO         ; GLM
                 classType REDBARON      ; RDBN
+                classType SPECIAL       ; MGNT, Added
+                classType SPECIAL       ; SCUB, Added

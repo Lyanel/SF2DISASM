@@ -10,18 +10,28 @@ AllyStats02:    forClass KNTE
                 spellList 
                     
                 forClass PLDN
-                hpGrowth 36, 95, EARLYANDLATE
-                mpGrowth 0, 0, NONE
-                atkGrowth 24, 47, LINEAR
-                defGrowth 23, 71, LINEAR
-                agiGrowth 25, 68, LINEAR
-                spellList 
+                hpGrowth 36, 108, EARLYANDLATE
+                mpGrowth 0, 56, EARLYANDLATE
+                atkGrowth 24, 57, LINEAR
+                defGrowth 23, 85, LINEAR
+                agiGrowth 25, 51, LINEAR
+                spellList &
+                    25, HAGALAZ, &
+                    42, HAGALAZ|LV2, &
+                    54, HAGALAZ|LV3, &
+                    29, SLOW, &
+                    49, SLOW|LV2
                     
                 forClass PGNT
-                hpGrowth 34, 90, EARLYANDLATE
-                mpGrowth 0, 0, NONE
-                atkGrowth 24, 47, LINEAR
-                defGrowth 21, 66, LINEAR
+                hpGrowth 34, 99, EARLYANDLATE
+                mpGrowth 0, 53, EARLYANDLATE
+                atkGrowth 24, 66, LINEAR
+                defGrowth 21, 64, LINEAR
                 agiGrowth 22, 63, LINEAR
-                spellList 
+                spellList &
+                    25, HAGALAZ, &
+                    42, HAGALAZ|LV2, &
+                    54, HAGALAZ|LV3, &
+                    29, SLOW, &
+                    49, SLOW|LV2
                     

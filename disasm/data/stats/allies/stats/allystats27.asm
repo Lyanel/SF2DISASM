@@ -2,23 +2,24 @@
 ; ASM FILE data\stats\allies\stats\allystats27.asm :
 ; 0x1EE782..0x1EE7AD : Ally stats 27
 AllyStats27:    forClass WIZ
-                hpGrowth 28, 83, LINEAR
-                mpGrowth 42, 88, LINEAR
-                atkGrowth 15, 29, LINEAR
-                defGrowth 17, 61, MIDDLE
-                agiGrowth 27, 58, LINEAR
+                hpGrowth 28, 72, LINEAR
+                mpGrowth 42, 82, LINEAR
+                atkGrowth 15, 34, LINEAR
+                defGrowth 17, 67, MIDDLE
+                agiGrowth 27, 78, LINEAR
                 spellList &
-                    1, BLAZE, &
-                    6, FREEZE, &
-                    11, BLAZE|LV2, &
-                    17, FREEZE|LV2, &
-                    25, FREEZE|LV3, &
-                    40, BOLT, &
-                    41, DISPEL, &
-                    44, BOLT|LV2, &
-                    46, FREEZE|LV4, &
-                    49, BOLT|LV3, &
-                    53, BOLT|LV4, &
-                    56, BLAZE|LV3, &
-                    60, BLAZE|LV4
+                    1, BLAST, &
+                    12, BLAST|LV2, &
+                    28, BLAST|LV3, &
+                    40, BLAST|LV4, &
+                    19, SPOIT, &
+                    47, SPOIT|LV2, &
+                    4, BLAZE, &
+                    17, BLAZE|LV2, &
+                    31, BLAZE|LV3, &
+                    45, BLAZE|LV4, &
+                    8, BOLT, &
+                    24, BOLT|LV2, &
+                    36, BOLT|LV3, &
+                    54, BOLT|LV4
                     

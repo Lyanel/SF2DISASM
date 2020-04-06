@@ -915,7 +915,7 @@ loc_89F4:
                 andi.w  #ITEM_MASK_IDX,d1
                 cmpi.w  #ITEM_NOTHING,d1
                 beq.s   loc_8A12
-                btst    #ITEM_BIT_EQUIPPED,ITEM_OFFSET_IDXANDEQUIPBYTE(a1)
+                btst    #ITEM_UPPERBIT_EQUIPPED,(a1)	; Edited
                 beq.s   loc_8A12
                 bsr.w   ApplyItemOnStats
                 beq.s   loc_8A12
@@ -1445,7 +1445,7 @@ EquipItemBySlot:
                 beq.s   loc_8D5C
 loc_8D56:
                 
-                bset    #ITEM_BIT_EQUIPPED,ITEM_OFFSET_IDXANDEQUIPBYTE(a0)
+                bset    #ITEM_UPPERBIT_EQUIPPED,(a0)	; Edited
 loc_8D5C:
                 
                 bra.s   loc_8D62
@@ -1509,7 +1509,7 @@ UnequipItemBySlotIfNotCursed:
                 bsr.s   IsItemInSlotEquippedAndCursed
                 tst.w   d2
                 bne.s   loc_8DAE
-                bclr    #ITEM_BIT_EQUIPPED,ITEM_OFFSET_IDXANDEQUIPBYTE(a0)
+                bclr    #ITEM_UPPERBIT_EQUIPPED,(a0)	; Edited
 loc_8DAE:
                 
                 movem.l (sp)+,d0-d1/a0
@@ -1536,7 +1536,7 @@ loc_8DBC:
                 andi.w  #ITEM_MASK_IDX,d1
                 cmpi.w  #ITEM_NOTHING,d1
                 beq.s   loc_8DF8        
-                btst    #ITEM_BIT_EQUIPPED,ITEM_OFFSET_IDXANDEQUIPBYTE(a0)
+                btst    #ITEM_UPPERBIT_EQUIPPED,(a0)	; Edited
                 beq.s   loc_8DF2        
                 movem.l a0,-(sp)
                 bsr.w   GetItemDefAddress
@@ -1576,7 +1576,7 @@ UnequipItemBySlot:
                 
                 movem.l d0-d1/a0,-(sp)
                 bsr.s   IsItemInSlotEquippedAndCursed
-                bclr    #ITEM_BIT_EQUIPPED,ITEM_OFFSET_IDXANDEQUIPBYTE(a0)
+                bclr    #ITEM_UPPERBIT_EQUIPPED,(a0)	; Edited
                 movem.l (sp)+,d0-d1/a0
                 bra.w   ApplyStatusAndItemsOnStats
 
@@ -1607,7 +1607,7 @@ DropItemBySlot:
                 movem.l (sp)+,a0
                 beq.s   loc_8E52
                 move.w  #2,d2           ; item cursed
-                btst    #ITEM_BIT_EQUIPPED,ITEM_OFFSET_IDXANDEQUIPBYTE(a0)
+                btst    #ITEM_UPPERBIT_EQUIPPED,(a0)	; Edited
                 bne.s   loc_8E54        ; item equipped and cursed, so can't drop it
 loc_8E52:
                 
@@ -1706,7 +1706,7 @@ loc_8EC2:
                 move.b  ITEMDEF_OFFSET_TYPE(a0),d1
                 and.b   d2,d1
                 beq.s   loc_8EE0
-                bclr    #ITEM_BIT_EQUIPPED,ITEM_OFFSET_IDXANDEQUIPBYTE(a1)
+                bclr    #ITEM_UPPERBIT_EQUIPPED,(a1)	; Edited
 loc_8EE0:
                 
                 addq.w  #SIZE_ITEM,a1
@@ -1739,7 +1739,7 @@ loc_8F00:
                 move.l  #$7F0004,(a2)
                 move.l  #$7F0004,4(a2)
                 move.l  #$7F0004,8(a2)
-                move.l  #$800004,$C(a2)
+                move.l  #$1000004,$C(a2)	; Edited
                 clr.w   d0
                 moveq   #0,d4
                 moveq   #3,d5
@@ -2039,7 +2039,7 @@ loc_9114:
                 bsr.w   GetItemDefAddress
                 btst    #ITEMTYPE_BIT_CURSED,ITEMDEF_OFFSET_TYPE(a0)
                 beq.s   loc_9138
-                bclr    #ITEM_BIT_EQUIPPED,ITEM_OFFSET_IDXANDEQUIPBYTE(a1)
+                bclr    #ITEM_UPPERBIT_EQUIPPED,(a1)	; Edited
 loc_9138:
                 
                 addq.w  #2,a1
@@ -2157,7 +2157,7 @@ GetSpellDefAddress:
 loc_91DC:
                 
                 movea.l (p_SpellDefs).l,a0
-                moveq   #SPELL_DEFS_COUNTER,d0
+                move.w   #SPELL_DEFS_COUNTER,d0	; Edited
 loc_91E4:
                 
                 cmp.b   (a0),d1
@@ -3062,13 +3062,13 @@ loc_97A0:
                 ext.w   d2
                 move.w  d2,-(sp)
                 clr.w   d3
-                move.b  (a0)+,d3
+				move.w  (a0)+,d3 ; Edited
                 move.w  d3,CHAR_OFFSET_ITEM_0(a1)
-                move.b  (a0)+,d3
+                move.w  (a0)+,d3 ; Edited
                 move.w  d3,CHAR_OFFSET_ITEM_1(a1)
-                move.b  (a0)+,d3
+                move.w  (a0)+,d3 ; Edited
                 move.w  d3,CHAR_OFFSET_ITEM_2(a1)
-                move.b  (a0)+,d3
+                move.w  (a0)+,d3 ; Edited
                 move.w  d3,CHAR_OFFSET_ITEM_3(a1)
                 move.l  #$3F3F3F3F,CHAR_OFFSET_SPELL_0(a1)
                 bsr.w   SetCharacterClassData

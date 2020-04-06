@@ -10,10 +10,18 @@ AllyStats06:    forClass TORT
                 spellList 
                     
                 forClass MNST
-                hpGrowth 10, 40, LINEAR
-                mpGrowth 0, 0, NONE
-                atkGrowth 35, 98, LINEAR
+                hpGrowth 10, 88, LINEAR
+                mpGrowth 0, 52, LINEAR
+                atkGrowth 35, 103, LINEAR
                 defGrowth 41, 100, LINEAR
-                agiGrowth 20, 55, LINEAR
-                spellList 
+                agiGrowth 20, 50, LINEAR
+                spellList &
+                    23, FEHU, &
+                    35, FEHU|LV2, &
+                    46, FEHU|LV3, &
+                    27, BOOST, &
+                    49, BOOST|LV2, &
+                    28, HAGALAZ, &
+                    36, HAGALAZ|LV2, &
+                    51, HAGALAZ|LV3
                     

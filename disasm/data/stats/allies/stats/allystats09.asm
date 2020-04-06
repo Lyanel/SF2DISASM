@@ -10,10 +10,18 @@ AllyStats09:    forClass WFMN
                 spellList 
                     
                 forClass WFBR
-                hpGrowth 29, 92, LINEAR
-                mpGrowth 0, 0, NONE
-                atkGrowth 45, 111, LINEAR
-                defGrowth 29, 80, LINEAR
-                agiGrowth 28, 66, LINEAR
-                spellList 
+                hpGrowth 29, 93, LINEAR
+                mpGrowth 0, 47, EARLYANDLATE
+                atkGrowth 45, 107, LINEAR
+                defGrowth 29, 92, LINEAR
+                agiGrowth 28, 58, LINEAR
+                spellList &
+                    24, E_WILL, &
+                    36, E_WILL|LV2, &
+                    44, E_WILL|LV3, &
+                    30, ATTACK, &
+                    51, ATTACK|LV2, &
+                    28, E_HOPE, &
+                    38, E_HOPE|LV2, &
+                    49, E_HOPE|LV3
                     

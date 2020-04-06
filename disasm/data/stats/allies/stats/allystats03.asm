@@ -10,18 +10,34 @@ AllyStats03:    forClass WARR
                 spellList 
                     
                 forClass GLDT
-                hpGrowth 32, 86, LINEAR
-                mpGrowth 0, 0, NONE
-                atkGrowth 27, 60, LINEAR
-                defGrowth 32, 106, LINEAR
-                agiGrowth 20, 54, EARLY
-                spellList 
+                hpGrowth 32, 73, LINEAR
+                mpGrowth 0, 47, EARLY
+                atkGrowth 27, 52, LINEAR
+                defGrowth 32, 105, LINEAR
+                agiGrowth 20, 53, EARLY
+                spellList &
+                    23, FEHU, &
+                    34, FEHU|LV2, &
+                    45, FEHU|LV3, &
+                    26, SPOIT, &
+                    48, SPOIT|LV2, &
+                    30, SOWILO, &
+                    38, SOWILO|LV2, &
+                    53, SOWILO|LV3
                     
                 forClass BRN
-                hpGrowth 32, 86, LINEAR
-                mpGrowth 0, 0, NONE
-                atkGrowth 27, 60, LINEAR
-                defGrowth 32, 96, LINEAR
-                agiGrowth 20, 59, EARLY
-                spellList 
+                hpGrowth 32, 94, LINEAR
+                mpGrowth 0, 59, EARLY
+                atkGrowth 27, 46, LINEAR
+                defGrowth 32, 90, LINEAR
+                agiGrowth 20, 65, EARLY
+                spellList &
+                    23, FEHU, &
+                    34, FEHU|LV2, &
+                    45, FEHU|LV3, &
+                    26, SPOIT, &
+                    48, SPOIT|LV2, &
+                    30, SOWILO, &
+                    38, SOWILO|LV2, &
+                    53, SOWILO|LV3
                     

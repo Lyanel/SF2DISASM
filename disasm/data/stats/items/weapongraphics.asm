@@ -257,3 +257,24 @@ WeaponGraphicsTable:
                 weaponSprite KATANA     ; Gisarme
                 weaponPalette KATANA
                     
+                ; ------------------------------- Added
+                    
+                weaponSprite NONE       ; Rapid Canon
+                weaponPalette SHORT_AXE
+                
+                weaponSprite NONE       ; Vampire Quarrel
+                weaponPalette SHORT_AXE
+                
+                weaponSprite NONE       ; Dragonbone Quarrel
+                weaponPalette SHORT_AXE
+                
+                weaponSprite POWER_STICK ; Kendama
+                weaponPalette POWER_STICK
+                
+                weaponSprite NONE       ; Shade Knuckles
+                weaponPalette SHORT_AXE
+                
+                weaponSprite NONE       ; Gold Knuckles
+                weaponPalette SHORT_AXE
+
+                ; -------------------------------

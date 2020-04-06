@@ -200,4 +200,16 @@ ClassDefs:      ; resistance enum Resistance : RESISTANCE_*
                 moveType REGULAR
                 prowess &
                     CRITICAL150_1IN8|DOUBLE_1IN32|COUNTER_1IN8
+                ; Added
+                mov 6                   ; MGNT
+                resistance NONE
+                moveType CENTAUR
+                prowess &
+                    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN16
+                    
+                mov 6                   ; SCUB
+                resistance NONE
+                moveType HOVERING
+                prowess &
+                    CRITICAL125_1IN16|DOUBLE_1IN32|COUNTER_1IN8
                     

@@ -218,16 +218,16 @@ AllyBattleSpritesTable:
                 
                 ; Additional entries to be defined with force members expansion patch
                 if (FORCE_MEMBERS_EXPANSION=1)
-                
-                forClass RDBN
-                allyBattleSprite SDMN, 0
+				; Edited
+                forClass MGNT			; LATAURA
+                allyBattleSprite MGNT, 2
                 forClass NONE
                 allyBattleSprite NONE, 0
                 forClass NONE
                 allyBattleSprite NONE, 0
                 
-                forClass RDBN
-                allyBattleSprite SDMN, 0
+                forClass SCUB			; SUHELL
+                allyBattleSprite SCUB, 2
                 forClass NONE
                 allyBattleSprite NONE, 0
                 forClass NONE

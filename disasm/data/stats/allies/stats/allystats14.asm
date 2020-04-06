@@ -10,18 +10,28 @@ AllyStats14:    forClass KNTE
                 spellList 
                     
                 forClass PLDN
-                hpGrowth 44, 100, LATE
-                mpGrowth 0, 0, NONE
-                atkGrowth 28, 56, LATE
-                defGrowth 23, 79, LATE
-                agiGrowth 23, 73, LATE
-                spellList 
+                hpGrowth 44, 110, LATE
+                mpGrowth 0, 60, MIDDLE
+                atkGrowth 28, 55, LATE
+                defGrowth 23, 83, LATE
+                agiGrowth 23, 53, LATE
+                spellList &
+                    26, SOWILO, &
+                    43, SOWILO|LV2, &
+                    55, SOWILO|LV3, &
+                    28, SLEEP, &
+                    48, SLEEP|LV2
                     
                 forClass PGNT
-                hpGrowth 44, 100, LATE
-                mpGrowth 0, 0, NONE
-                atkGrowth 28, 56, LATE
-                defGrowth 23, 84, LATE
-                agiGrowth 23, 69, LATE
-                spellList 
+                hpGrowth 44, 101, LATE
+                mpGrowth 0, 57, MIDDLE
+                atkGrowth 28, 64, LATE
+                defGrowth 23, 62, LATE
+                agiGrowth 23, 65, LATE
+                spellList &
+                    26, SOWILO, &
+                    43, SOWILO|LV2, &
+                    55, SOWILO|LV3, &
+                    28, SLEEP, &
+                    48, SLEEP|LV2
                     

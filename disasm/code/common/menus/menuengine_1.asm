@@ -1257,8 +1257,8 @@ loc_10798:
                 moveq   #$FFFFFFDC,d1
                 bsr.w   WriteTilesFromASCII
                 move.w  (sp)+,d1
-                tst.b   d1
-                bpl.s   return_107D4
+                btst    #ITEM_BIT_EQUIPPED,d1	; Edited
+                beq.s   return_107D4			; Edited
                 lea     aEquipped(pc), a0
                 move.w  -$C(a6),d0
                 move.w  #$904,d1
@@ -1492,7 +1492,7 @@ LoadHighlightableIcon:
                 adda.w  #$C0,a1 
                 mulu.w  #$C0,d0 
                 movea.l (p_Icons).l,a0
-                adda.w  d0,a0           ; icon offset
+                adda.l  d0,a0			; Edited
                 move.w  #$2F,d1 
                 lea     IconHighlightTiles(pc), a2
 loc_1097A:
@@ -4230,7 +4230,7 @@ aJewel:
                 add.w   d1,d1
                 add.w   d2,d1
                 lsl.w   #6,d1
-                adda.w  d1,a0
+                adda.l  d1,a0			; Edited
                 move.w  #$C0,d7 
                 jsr     (CopyBytes).w   
                 ori.b   #$F0,(a1)
@@ -4258,7 +4258,7 @@ aJewel:
                 andi.w  #ITEM_MASK_IDX,d1
                 movea.l (p_Icons).l,a0
                 mulu.w  #$C0,d1 
-                adda.w  d1,a0
+                adda.l  d1,a0			; Edited
                 move.w  #$C0,d7 
                 jsr     (CopyBytes).w   
                 move.w  (sp)+,d1
@@ -4266,7 +4266,7 @@ aJewel:
                 beq.s   @CleanIconCorners
                 movem.l d2-d3/a0-a1,-(sp)
                 movea.l (p_Icons).l,a0
-                lea     ICON_OFFSET_CRACKS(a0),a0
+                adda.l  #ICON_OFFSET_CRACKS,a0	; Edited
                 move.w  #$BF,d2 
 @DrawCracks_Loop:
                 
@@ -4307,7 +4307,7 @@ loc_12526:
                 add.w   d1,d1
                 add.w   d2,d1
                 lsl.w   #6,d1
-                adda.w  d1,a0
+                adda.l  d1,a0			; Edited
                 move.w  #$C0,d7 
                 jsr     (CopyBytes).w   
                 ori.b   #$F0,(a1)
@@ -4321,7 +4321,7 @@ loc_12526:
                 add.w   d1,d1
                 add.w   d2,d1
                 lsl.w   #6,d1
-                adda.w  d1,a0
+                adda.l  d1,a0			; Edited
                 move.w  #$C0,d7 
                 jsr     (CopyBytes).w   
                 ori.b   #$F0,(a1)

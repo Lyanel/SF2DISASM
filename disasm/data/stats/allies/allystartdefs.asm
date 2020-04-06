@@ -243,19 +243,19 @@ AllyStartDefs:  ; startClass enum Classes : CLASS_*
                     NOTHING, &
                     NOTHING, &
                     NOTHING
-                    
-                startClass RDBN
-                startLevel 1
+				; Edited
+                startClass MGNT			; LATAURA
+                startLevel 12
                 startItems &
-                    NOTHING, &
+                    CHROME_LANCE|EQUIPPED, &
                     NOTHING, &
                     NOTHING, &
                     NOTHING
                     
-                startClass RDBN
-                startLevel 1
+                startClass SCUB			; SUHELL
+                startLevel 13
                 startItems &
-                    NOTHING, &
+                    BRASS_KNUCKLES|EQUIPPED, &
                     NOTHING, &
                     NOTHING, &
                     NOTHING

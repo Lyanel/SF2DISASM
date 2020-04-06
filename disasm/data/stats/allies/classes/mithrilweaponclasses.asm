@@ -5,11 +5,11 @@ MithrilWeaponClassLists:
                 ; enum Classes : CLASS_*
     
                 mithrilWeaponClass HERO, BDBT
-                mithrilWeaponClass PLDN, PGNT
+                mithrilWeaponClass PLDN, PGNT, MGNT	; Edited
                 mithrilWeaponClass GLDT
                 mithrilWeaponClass WIZ, SORC
                 mithrilWeaponClass VICR
                 mithrilWeaponClass SNIP, BRGN, BWNT
                 mithrilWeaponClass NINJ
-                mithrilWeaponClass MMNK
+                mithrilWeaponClass MMNK, SCUB	; Edited
                 mithrilWeaponClass BRN, RDBN

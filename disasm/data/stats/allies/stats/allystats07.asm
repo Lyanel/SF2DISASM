@@ -10,10 +10,18 @@ AllyStats07:    forClass PHNK
                 spellList 
                     
                 forClass PHNX
-                hpGrowth 35, 107, LINEAR
-                mpGrowth 0, 0, NONE
-                atkGrowth 49, 120, LATE
-                defGrowth 28, 90, LINEAR
-                agiGrowth 21, 57, LINEAR
-                spellList 
+                hpGrowth 35, 98, LINEAR
+                mpGrowth 0, 42, EARLY
+                atkGrowth 49, 109, LATE
+                defGrowth 28, 94, LINEAR
+                agiGrowth 21, 56, LINEAR
+                spellList &
+                    23, KATON, &
+                    35, KATON|LV2, &
+                    46, KATON|LV3, &
+                    28, ATTACK, &
+                    50, ATTACK|LV2, &
+                    31, RAIJIN, &
+                    39, RAIJIN|LV2, &
+                    55, RAIJIN|LV3
                     

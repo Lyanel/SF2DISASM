@@ -18,11 +18,11 @@ loc_47924:
                 addi.w  #$20,d1 ; "in active party" flags
                 jsr     j_CheckFlag
                 beq.s   loc_47938       
-                addi.w  #$DC3,d0        ; 0DC3={W1}
+                addi.w  #$10B0,d0	; Edited
                 bra.s   loc_4793C       ; start of headquarters quotes
 loc_47938:
                 
-                addi.w  #$DE1,d0        ; 0DE1={W1}
+                addi.w  #$10D0,d0	; Edited
 loc_4793C:
                 
                 jsr     (DisplayText).w ; alternate quotes ?

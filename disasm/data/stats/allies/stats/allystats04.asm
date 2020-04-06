@@ -8,37 +8,45 @@ AllyStats04:    forClass MAGE
                 defGrowth 4, 26, LINEAR
                 agiGrowth 6, 42, LINEAR
                 spellList &
-                    1, BLAZE, &
-                    5, BLAZE|LV2, &
-                    9, MUDDLE, &
-                    13, DISPEL, &
-                    18, DESOUL, &
-                    22, BLAZE|LV3, &
-                    25, MUDDLE|LV2, &
-                    29, DESOUL|LV2, &
-                    35, BLAZE|LV4
+                    1, BLAST, &
+                    11, BLAST|LV2, &
+                    27, BLAST|LV3, &
+                    39, BLAST|LV4, &
+                    15, SLOW, &
+                    43, SLOW|LV2, &
+                    6, FREEZE, &
+                    22, FREEZE|LV2, &
+                    34, FREEZE|LV3, &
+                    51, FREEZE|LV4, &
+                    10, BOLT, &
+                    26, BOLT|LV2, &
+                    38, BOLT|LV3, &
+                    51, BOLT|LV4
                     
                 forClass WIZ
-                hpGrowth 26, 77, LATE
-                mpGrowth 40, 83, LINEAR
-                atkGrowth 13, 28, LINEAR
-                defGrowth 18, 57, LINEAR
-                agiGrowth 29, 83, EARLYANDLATE
+                hpGrowth 26, 66, LATE
+                mpGrowth 40, 72, LINEAR
+                atkGrowth 13, 37, LINEAR
+                defGrowth 18, 64, LINEAR
+                agiGrowth 29, 88, EARLYANDLATE
                 useFirstSpellList
                     
                 forClass SORC
-                hpGrowth 26, 77, LATE
-                mpGrowth 40, 90, LINEAR
-                atkGrowth 13, 28, LINEAR
-                defGrowth 18, 60, LINEAR
-                agiGrowth 29, 60, EARLYANDLATE
+                hpGrowth 26, 78, LATE
+                mpGrowth 40, 75, LINEAR
+                atkGrowth 13, 34, LINEAR
+                defGrowth 18, 70, LINEAR
+                agiGrowth 29, 85, EARLYANDLATE
                 spellList &
                     21, DAO, &
-                    24, APOLLO, &
-                    27, NEPTUN, &
-                    32, DAO|LV2, &
-                    37, APOLLO|LV2, &
-                    41, ATLAS, &
-                    46, NEPTUN|LV2, &
-                    52, ATLAS|LV2
+                    34, DAO|LV2, &
+                    46, DAO|LV3, &
+                    21, SLOW, &
+                    48, SLOW|LV2, &
+                    28, E_LOVE, &
+                    40, E_LOVE|LV2, &
+                    56, E_LOVE|LV3, &
+                    31, ATLAS, &
+                    43, ATLAS|LV2, &
+                    59, ATLAS|LV3
                     

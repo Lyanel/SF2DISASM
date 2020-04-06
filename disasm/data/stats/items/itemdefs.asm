@@ -298,7 +298,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Leather Glove
-                    MMNK
+                    MMNK|SCUB ; Edited
                 range 1, 1
                 price 1300
                 itemType &
@@ -310,7 +310,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Power Glove
-                    MMNK
+                    MMNK|SCUB ; Edited
                 range 1, 1
                 price 1800
                 itemType &
@@ -322,7 +322,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Brass Knuckles
-                    MMNK
+                    MMNK|SCUB ; Edited
                 range 1, 1
                 price 2900
                 itemType &
@@ -334,7 +334,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Iron Knuckles
-                    MMNK
+                    MMNK|SCUB ; Edited
                 range 1, 1
                 price 4800
                 itemType &
@@ -346,21 +346,21 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Misty Knuckles
-                    MMNK
+                    MMNK|SCUB ; Edited
                 range 1, 1
-                price 5500
+                price 8500 ; Edited
                 itemType &
                     WEAPON|RARE|MAGICAL
                 useSpell SPOIT
                 equipEffects &
-                    INCREASE_ATK, 48, &
+                    INCREASE_ATK, 51, & ; Edited
                     NONE, 0, &
                     NONE, 0
                     
                 equipFlags &            ; Giant Knuckles
-                    MMNK
+                    MMNK|SCUB ; Edited
                 range 1, 1
-                price 7500
+                price 9500 ; Edited
                 itemType &
                     WEAPON|RARE|MAGICAL
                 useSpell MUDDLE
@@ -370,9 +370,9 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Evil Knuckles
-                    MMNK
+                    MMNK|SCUB ; Edited
                 range 1, 1
-                price 9500
+                price 15000 ; Edited
                 itemType &
                     WEAPON|RARE|CURSED
                 useSpell NOTHING
@@ -526,7 +526,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Wooden Arrow
-                    ACHR|RNGR|SNIP|BRGN|BWNT
+                    ACHR|RNGR|SNIP|BWNT ; Edited
                 range 2, 2
                 price 250
                 itemType &
@@ -538,7 +538,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Iron Arrow
-                    ACHR|RNGR|SNIP|BRGN|BWNT
+                    ACHR|RNGR|SNIP|BWNT ; Edited
                 range 2, 2
                 price 600
                 itemType &
@@ -550,7 +550,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Steel Arrow
-                    ACHR|RNGR|SNIP|BRGN|BWNT
+                    ACHR|RNGR|SNIP|BWNT ; Edited
                 range 2, 2
                 price 1270
                 itemType &
@@ -562,26 +562,26 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Robin Arrow
-                    SNIP|BRGN|BWNT
-                range 2, 3
-                price 1480
+                    SNIP|BWNT ; Edited
+                range 1, 3 ; Edited
+                price 2500 ; Edited
                 itemType &
                     WEAPON
                 useSpell NOTHING
                 equipEffects &
-                    INCREASE_ATK, 21, &
+                    INCREASE_ATK, 23, & ; Edited
                     INCREASE_CRITICAL, 1, &
                     NONE, 0
                     
                 equipFlags &            ; Assault Shell
                     SNIP|BRGN|BWNT
                 range 2, 3
-                price 2500
+                price 1480 ; Edited
                 itemType &
                     WEAPON
                 useSpell NOTHING
                 equipEffects &
-                    INCREASE_ATK, 25, &
+                    INCREASE_ATK, 21, & ; Edited
                     NONE, 0, &
                     NONE, 0
                     
@@ -598,15 +598,15 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Nazca Cannon
-                    SNIP|BRGN|BWNT
-                range 2, 3
-                price 3000
+                    BRGN ; Edited
+                range 2, 4 ; Edited
+                price 6200 ; Edited
                 itemType &
                     WEAPON|RARE
                 useSpell NOTHING
                 equipEffects &
                     INCREASE_ATK, 33, &
-                    INCREASE_CRITICAL, 1, &
+                    INCREASE_COUNTER, 1, & ; Edited
                     NONE, 0
                     
                 equipFlags &            ; Buster Shot
@@ -634,14 +634,14 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Grand Cannon
-                    SNIP|BRGN|BWNT
-                range 2, 3
+                    BRGN ; Edited
+                range 2, 4 ; Edited
                 price 9800
                 itemType &
                     WEAPON|RARE|MAGICAL
                 useSpell DISPEL
                 equipEffects &
-                    INCREASE_ATK, 43, &
+                    INCREASE_ATK, 46, & ; Edited
                     NONE, 0, &
                     NONE, 0
                     
@@ -658,7 +658,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Wooden Stick
-                    KNTE|PLDN|PGNT
+                    KNTE|PLDN|PGNT|MGNT ; Edited
                 range 1, 1
                 price 70
                 itemType &
@@ -814,7 +814,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Levanter
-                    HERO
+                    HERO|BDBT ; Edited
                 range 1, 1
                 price 14000
                 itemType &
@@ -862,7 +862,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Bronze Lance
-                    KNTE|PLDN|PGNT
+                    KNTE|PLDN|PGNT|MGNT ; Edited
                 range 1, 1
                 price 260
                 itemType &
@@ -886,7 +886,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Steel Lance
-                    KNTE|PLDN|PGNT
+                    KNTE|PLDN|PGNT|MGNT ; Edited
                 range 1, 1
                 price 810
                 itemType &
@@ -910,7 +910,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Heavy Lance
-                    PLDN|PGNT
+                    PLDN|PGNT|MGNT ; Edited
                 range 1, 1
                 price 1600
                 itemType &
@@ -934,7 +934,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Chrome Lance
-                    PLDN|PGNT
+                    PLDN|PGNT|MGNT ; Edited
                 range 1, 1
                 price 6900
                 itemType &
@@ -958,7 +958,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Holy Lance
-                    PLDN|PGNT
+                    PLDN|PGNT|MGNT ; Edited
                 range 1, 1
                 price 9300
                 itemType &
@@ -982,7 +982,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Halberd
-                    PLDN|PGNT
+                    PLDN|PGNT|MGNT ; Edited
                 range 1, 1
                 price 7300
                 itemType &
@@ -994,7 +994,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Evil Lance
-                    PLDN|PGNT
+                    PLDN|PGNT|MGNT ; Edited
                 range 1, 1
                 price 11000
                 itemType &
@@ -1006,7 +1006,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Wooden Rod
-                    MAGE|PRST|WIZ|SORC|VICR
+                    MAGE|PRST|WIZ|SORC|VICR|MGNT ; Edited
                 range 1, 1
                 price 60
                 itemType &
@@ -1018,7 +1018,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Short Rod
-                    MAGE|PRST|WIZ|SORC|VICR
+                    MAGE|PRST|WIZ|SORC|VICR|MGNT ; Edited
                 range 1, 1
                 price 130
                 itemType &
@@ -1030,7 +1030,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Bronze Rod
-                    MAGE|PRST|WIZ|SORC|VICR
+                    MAGE|PRST|WIZ|SORC|VICR|MGNT ; Edited
                 range 1, 1
                 price 360
                 itemType &
@@ -1042,7 +1042,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Iron Rod
-                    MAGE|PRST|WIZ|SORC|VICR
+                    MAGE|PRST|WIZ|SORC|VICR|MGNT ; Edited
                 range 1, 1
                 price 560
                 itemType &
@@ -1054,7 +1054,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Power Stick
-                    MAGE|PRST|WIZ|SORC|VICR
+                    MAGE|PRST|WIZ|SORC|VICR|MGNT ; Edited
                 range 1, 1
                 price 1050
                 itemType &
@@ -1066,19 +1066,19 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Flail
-                    WIZ|SORC|VICR
-                range 1, 1
-                price 1490
+                    WIZ|SORC|VICR|MMNK ; Edited
+                range 1, 2 ; Edited
+                price 3200 ; Edited
                 itemType &
                     WEAPON
                 useSpell NOTHING
                 equipEffects &
-                    INCREASE_ATK, 19, &
-                    NONE, 0, &
+                    INCREASE_ATK, 23, & ; Edited
+                    DECREASE_AGI, 5, & ; Edited
                     NONE, 0
                     
                 equipFlags &            ; Guardian Staff
-                    WIZ|SORC|VICR
+                    WIZ|SORC|VICR|MGNT ; Edited
                 range 1, 1
                 price 2380
                 itemType &
@@ -1090,9 +1090,9 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Indra Staff
-                    WIZ|SORC|VICR
+                    WIZ|SORC|VICR|MGNT ; Edited
                 range 1, 1
-                price 3200
+                price 3800 ; Edited
                 itemType &
                     WEAPON|MAGICAL
                 useSpell SPOIT
@@ -1116,24 +1116,24 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                 equipFlags &            ; Wish Staff
                     VICR
                 range 1, 1
-                price 6100
+                price 7900 ; Edited
                 itemType &
                     WEAPON|RARE|MAGICAL
                 useSpell ATTACK
                 equipEffects &
-                    INCREASE_ATK, 26, &
+                    INCREASE_ATK, 29, & ; Edited
                     NONE, 0, &
                     NONE, 0
                     
                 equipFlags &            ; Great Rod
-                    WIZ|SORC|VICR
+                    WIZ|SORC|VICR|MGNT ; Edited
                 range 1, 1
-                price 7900
+                price 1490 ; Edited
                 itemType &
-                    WEAPON|RARE
+                    WEAPON ; Edited
                 useSpell NOTHING
                 equipEffects &
-                    INCREASE_ATK, 28, &
+                    INCREASE_ATK, 19, & ; Edited
                     NONE, 0, &
                     NONE, 0
                     
@@ -1157,48 +1157,48 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     WEAPON|RARE
                 useSpell NOTHING
                 equipEffects &
-                    INCREASE_ATK, 29, &
+                    INCREASE_ATK, 34, & ; Edited
                     UNDEFINED1, 3, &
                     NONE, 0
                     
                 equipFlags &            ; Freeze Staff
                     WIZ|SORC
                 range 1, 1
-                price 9500
+                price 9700 ; Edited
                 itemType &
                     WEAPON|RARE|MAGICAL
                 useSpell FREEZE|LV3
                 equipEffects &
-                    INCREASE_ATK, 37, &
+                    INCREASE_ATK, 39, & ; Edited
                     NONE, 0, &
                     NONE, 0
                     
                 equipFlags &            ; Goddess Staff
                     VICR
                 range 1, 1
-                price 9700
+                price 10000 ; Edited
                 itemType &
                     WEAPON|RARE|MAGICAL
                 useSpell AURA|LV2
                 equipEffects &
-                    INCREASE_ATK, 31, &
+                    INCREASE_ATK, 41, & ; Edited
                     NONE, 0, &
                     NONE, 0
                     
                 equipFlags &            ; Mystery Staff
-                    WIZ|SORC|VICR
+                    WIZ|SORC|VICR|MGNT ; Edited
                 range 1, 1
-                price 10000
+                price 9500 ; Edited
                 itemType &
                     WEAPON|RARE
                 useSpell NOTHING
                 equipEffects &
-                    INCREASE_ATK, 39, &
+                    INCREASE_ATK, 37, & ; Edited
                     UNDEFINED2, 2, &
                     NONE, 0
                     
                 equipFlags &            ; Demon Rod
-                    WIZ|SORC|VICR
+                    WIZ|SORC|VICR|MGNT ; Edited
                 range 1, 1
                 price 12500
                 itemType &
@@ -1209,15 +1209,16 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     DECREASE_AGI, 10, &
                     NONE, 0
                     
-                equipFlags NONE         ; Iron Ball
-                range 1, 1
-                price 3800
+                equipFlags &         ; Iron Ball, Edited
+                    WIZ|SORC|VICR|MMNK ; Added
+                range 1, 2 ; Edited
+                price 11000 ; Edited
                 itemType &
                     WEAPON|RARE|CURSED|MAGICAL
                 useSpell BLAZE|LV3
                 equipEffects &
                     INCREASE_ATK, 44, &
-                    NONE, 0, &
+                    DECREASE_AGI, 8, & ; Edited
                     NONE, 0
                     
                 equipFlags &            ; Short Knife
@@ -1228,7 +1229,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     WEAPON
                 useSpell NOTHING
                 equipEffects &
-                    INCREASE_ATK, 5, &
+                    INCREASE_ATK, 4, & ; Edited
                     NONE, 0, &
                     NONE, 0
                     
@@ -1459,7 +1460,7 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0
                     
                 equipFlags &            ; Life Ring
-                    HERO|PLDN|PGNT|GLDT|BRN|WIZ|SORC|VICR|MMNK|SNIP|BRGN|BDBT|WFBR|BWNT|PHNX|NINJ|MNST|RBT|GLM|RDBN
+                    HERO|PLDN|PGNT|GLDT|BRN|WIZ|SORC|VICR|MMNK|SNIP|BRGN|BDBT|WFBR|BWNT|PHNX|NINJ|MNST|RBT|GLM|RDBN|MGNT|SCUB ; Edited
                 range 0, 0
                 price 5000
                 itemType &
@@ -1501,4 +1502,80 @@ ItemDefs:       ; equipFlags   enum EquipFlags : EQUIPFLAG_*
                     NONE, 0, &
                     NONE, 0, &
                     NONE, 0
+                    
+				; -------------------------------------------------------------- Added
+                    
+                equipFlags &            ; Rapid Cannon
+                    BRGN
+                range 2, 4
+                price 3600
+                itemType &
+                    WEAPON
+                useSpell NOTHING
+                equipEffects &
+                    INCREASE_ATK, 25, &
+                    INCREASE_DOUBLE, 1, &
+                    NONE, 0
+                
+                equipFlags &            ; Vampire Quarrel
+                    SNIP|BWNT
+                range 1, 3
+                price 5700
+                itemType &
+                    WEAPON|RARE|MAGICAL
+                useSpell SPOIT
+                equipEffects &
+                    INCREASE_ATK, 31, &
+                    NONE, 0, &
+                    NONE, 0
+				
+                equipFlags &            ; Dragonbone Quarrel
+                    SNIP|BWNT
+                range 1, 3
+                price 9200
+                itemType &
+                    WEAPON|RARE
+                useSpell NOTHING
+                equipEffects &
+                    INCREASE_ATK, 42, &
+                    INCREASE_DEF, 5, &
+                    NONE, 0
+
+                equipFlags &            ; Kendama
+                    MAGE|PRST|WIZ|SORC|VICR|MMNK
+                range 1, 2
+                price 810
+                itemType &
+                    WEAPON
+                useSpell NOTHING
+                equipEffects &
+                    INCREASE_ATK, 11, &
+                    DECREASE_AGI, 3, &
+                    NONE, 0
+                    
+                equipFlags &            ; Shade Knuckles
+                    MMNK|SCUB ; Edited
+                range 1, 1
+                price 5500
+                itemType &
+                    WEAPON|RARE
+                useSpell NOTHING
+                equipEffects &
+                    INCREASE_ATK, 45, & ; Edited
+                    INCREASE_MOV, 1, &
+                    NONE, 0
+                    
+                equipFlags &            ; Gold Knuckles
+                    MMNK|SCUB ; Edited
+                range 1, 1
+                price 7500
+                itemType &
+                    WEAPON|RARE
+                useSpell NOTHING
+                equipEffects &
+                    INCREASE_ATK, 48, &
+                    INCREASE_DEF, 5, &
+                    NONE, 0
+                    
+				; --------------------------------------------------------------
                     

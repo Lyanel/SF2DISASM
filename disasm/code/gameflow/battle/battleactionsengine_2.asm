@@ -527,6 +527,27 @@ rjt_ItemUsedEffects:
                 dc.w sub_BAD6-rjt_ItemUsedEffects
                 dc.w sub_BA1C-rjt_ItemUsedEffects
                 dc.w sub_BAF4-rjt_ItemUsedEffects
+				; -------------------------------------------------------------------
+    		    dc.w sub_BAFA-rjt_ItemUsedEffects       ; spell44, FUUJIN
+     		    dc.w sub_BAE2-rjt_ItemUsedEffects       ; spell45, HYOTON
+    		    dc.w sub_BAFA-rjt_ItemUsedEffects       ; spell46, ANSUZ
+ 		        dc.w sub_BADC-rjt_ItemUsedEffects       ; spell47, FEHU
+        		dc.w sub_BAE2-rjt_ItemUsedEffects       ; spell48, HAGALAZ
+        		dc.w sub_BAF4-rjt_ItemUsedEffects       ; spell49, SOWILO
+        		dc.w sub_B114-rjt_ItemUsedEffects       ; spell50, EARTH HOPE
+        		dc.w sub_B114-rjt_ItemUsedEffects       ; spell51, EARTH LOVE
+        		dc.w sub_B194-rjt_ItemUsedEffects       ; spell52, EARTH WILL
+        		dc.w NoItemEffect-rjt_ItemUsedEffects       ; spell53
+        		dc.w NoItemEffect-rjt_ItemUsedEffects       ; spell54
+        		dc.w NoItemEffect-rjt_ItemUsedEffects       ; spell55
+        		dc.w NoItemEffect-rjt_ItemUsedEffects       ; spell56
+        		dc.w NoItemEffect-rjt_ItemUsedEffects       ; spell57
+        		dc.w NoItemEffect-rjt_ItemUsedEffects       ; spell58
+        		dc.w NoItemEffect-rjt_ItemUsedEffects       ; spell59
+        		dc.w NoItemEffect-rjt_ItemUsedEffects       ; spell60
+        		dc.w NoItemEffect-rjt_ItemUsedEffects       ; spell61
+        		dc.w NoItemEffect-rjt_ItemUsedEffects       ; spell62
+        		; -------------------------------------------------------------------
 
 ; =============== S U B R O U T I N E =======================================
 
@@ -1757,11 +1778,9 @@ GetSpellPowerAdjustedForClass:
                 cmpi.w  #1,(a3)
                 bne.w   loc_BB78
                 move.b  (a4),d0
-                jsr     GetClass
-                cmpi.b  #CHAR_CLASS_FIRSTPROMOTED,d1
-                bcs.w   loc_BB78
-                mulu.w  #5,d6
-                lsr.w   #2,d6
+                jsr		GetCurrentAGI
+				divu.w  #$3,d1
+				add.w   d1,d6
 loc_BB78:
                 
                 move.w  ((CURRENT_BATTLE_SPELL_INDEX-$1000000)).w,d1

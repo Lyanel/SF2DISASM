@@ -53,7 +53,7 @@ EIGHT_CHARACTERS_MEMBER_NAMES: equ 0
 ;
 ;     0 = OFF, 1 = ON
 ;
-FULL_CLASS_NAMES: equ 0
+FULL_CLASS_NAMES: equ 1	; Edited
 
 ; ---------------------------------------------------------------------------
 
@@ -63,4 +63,14 @@ FULL_CLASS_NAMES: equ 0
 ;
 ;     0 = OFF, 1 = ON
 ;
-FORCE_MEMBERS_EXPANSION: equ 0
+FORCE_MEMBERS_EXPANSION: equ 1	; Edited
+
+; ---------------------------------------------------------------------------
+
+; patch Spell_Range_Expansion
+;
+;     Enable the use of 4 additional range for spells, items & weapons. (0->3 become 0->7)
+;
+;     0 = OFF, 1 = ON
+;
+SPELL_RANGE_EXPANSION: equ 1	; Edited

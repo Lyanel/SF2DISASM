@@ -100,7 +100,7 @@ EnemyNames:     enemyName "OOZE"
                 enemyName "ODD EYE"
                 enemyName "GALAM"
                 enemyName "ZEON"
-                enemyName "JAR", 0      ; here is the cause of the infamous JAR bug, an innocent typo :)
+                enemyName "JARO"
                 enemyName "MASTER MAGE"
                 enemyName "NECROMANCER"
                 enemyName "BLUE SHAMAN"

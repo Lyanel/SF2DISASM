@@ -33,3 +33,5 @@ ClassNames:     className "SDMN"
                 className "RBT"
                 className "GLM"
                 className "RDBN"
+                className "MGNT" ; Added
+                className "SCUB" ; Added

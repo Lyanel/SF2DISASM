@@ -123,10 +123,10 @@ AllyMapSprites: ; enum Mapsprites : MAPSPRITE_*
                 mapSprite CLAUDE_PROMO
                 mapSprite DEFAULT
                 
-                mapSprite DEFAULT
-                mapSprite DEFAULT
-                mapSprite DEFAULT
-                
-                mapSprite DEFAULT
-                mapSprite DEFAULT
-                mapSprite DEFAULT
+				mapSprite DEFAULT			; LATAURA
+				mapSprite DEFAULT
+				mapSprite PACALON_PRINCESS	; Edited
+				
+				mapSprite DEFAULT			; SUHELL
+				mapSprite DEFAULT
+				mapSprite FREE_SPOT1		; Edited

@@ -34,3 +34,5 @@ FullClassNames:
                 className "Robot"
                 className "Golem"
                 className "Red Baron"
+                className "Magic Knight" ; Added
+                className "Succubus" ; Added

@@ -34,7 +34,7 @@ AllyNames:      allyName "BOWIE"
                 
                 ; Additional entries to be defined with force members expansion patch
                 if (FORCE_MEMBERS_EXPANSION=1)
-                allyName ""
-                allyName ""
+                allyName "LATAURA"	; Edited
+                allyName "SUHELL"	; Edited
                 endif
                 

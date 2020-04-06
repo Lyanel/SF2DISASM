@@ -10,18 +10,28 @@ AllyStats12:    forClass KNTE
                 spellList 
                     
                 forClass PLDN
-                hpGrowth 36, 92, EARLY
-                mpGrowth 0, 0, NONE
-                atkGrowth 23, 44, EARLY
+                hpGrowth 36, 100, EARLY
+                mpGrowth 0, 58, MIDDLE
+                atkGrowth 23, 49, EARLY
                 defGrowth 28, 93, LINEAR
-                agiGrowth 30, 74, LATE
-                spellList 
+                agiGrowth 30, 59, LATE
+                spellList &
+                    24, FEHU, &
+                    38, FEHU|LV2, &
+                    47, FEHU|LV3, &
+                    31, SPOIT, &
+                    51, SPOIT|LV2
                     
                 forClass PGNT
-                hpGrowth 36, 92, EARLY
-                mpGrowth 0, 0, NONE
-                atkGrowth 23, 44, EARLY
-                defGrowth 28, 98, LINEAR
-                agiGrowth 30, 69, LATE
-                spellList 
+                hpGrowth 36, 91, EARLY
+                mpGrowth 0, 55, MIDDLE
+                atkGrowth 23, 58, EARLY
+                defGrowth 28, 72, LINEAR
+                agiGrowth 30, 71, LATE
+                spellList &
+                    24, FEHU, &
+                    38, FEHU|LV2, &
+                    47, FEHU|LV3, &
+                    31, SPOIT, &
+                    51, SPOIT|LV2
                     

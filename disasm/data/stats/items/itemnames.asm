@@ -49,12 +49,12 @@ ItemNames:      itemName "Medical", 13, "Herb"
                 itemName "Wooden", 13, "Arrow"
                 itemName "Iron", 13, "Arrow"
                 itemName "Steel", 13, "Arrow"
-                itemName "Robin", 13, "Arrow"
+                itemName "Robin", 13, "Quarrel" ; Edited : Promoted Arrow -> Quarrel.
                 itemName "Assault", 13, "Shell"
                 itemName "Great", 13, "Shot"
                 itemName "Nazca", 13, "Cannon"
                 itemName "Buster", 13, "Shot"
-                itemName "Hyper", 13, "Cannon"
+                itemName "Hyper", 13, "Shot" ; Edited : Canon are now reserved to BRGN.
                 itemName "Grand", 13, "Cannon"
                 itemName "Evil", 13, "Shot"
                 itemName "Wooden", 13, "Stick"
@@ -90,18 +90,18 @@ ItemNames:      itemName "Medical", 13, "Herb"
                 itemName "Short", 13, "Rod"
                 itemName "Bronze", 13, "Rod"
                 itemName "Iron", 13, "Rod"
-                itemName "Power", 13, "Stick"
+                itemName "Power", 13, "Rod" ; Edited : Weapons used by both VICR & WIZ are now Rod.
                 itemName "Flail"
-                itemName "Guardian", 13, "Staff"
-                itemName "Indra", 13, "Staff"
+                itemName "Guardian", 13, "Rod" ; Edited : Weapons used by both VICR & WIZ are now Rod.
+                itemName "Indra", 13, "Rod" ; Edited : Weapons used by both VICR & WIZ are now Rod.
                 itemName "Mage", 13, "Staff"
-                itemName "Wish", 13, "Staff"
+                itemName "Wish", 13, "Crosier" ; Edited : Weapons used only by VICR are now Crosier.
                 itemName "Great", 13, "Rod"
                 itemName "Supply", 13, "Staff"
-                itemName "Holy", 13, "Staff"
+                itemName "Holy", 13, "Crosier" ; Edited : Weapons used only by VICR are now Crosier.
                 itemName "Freeze", 13, "Staff"
-                itemName "Goddess", 13, "Staff"
-                itemName "Mystery", 13, "Staff"
+                itemName "Goddess", 13, "Crosier" ; Edited : Weapons used only by VICR are now Crosier.
+                itemName "Mystery", 13, "Rod" ; Edited : Weapons used by both VICR & WIZ are now Rod.
                 itemName "Demon", 13, "Rod"
                 itemName "Iron", 13, "Ball"
                 itemName "Short", 13, "Knife"
@@ -129,3 +129,11 @@ ItemNames:      itemName "Medical", 13, "Herb"
                 itemName "Cotton", 13, "Balloon"
                 itemName "Chirrup", 13, "Sandals"
                 itemName "Empty"
+				; ------------------------------- Added
+                itemName "Rapid", 13, "Canon"
+                itemName "Vampire", 13, "Quarrel"
+                itemName "Dragbone", 13, "Quarrel"
+                itemName "Kendama"
+                itemName "Shade", 13, "Knuckles"
+                itemName "Gold", 13, "Knuckles"
+				; -------------------------------

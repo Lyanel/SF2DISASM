@@ -2488,7 +2488,7 @@ loc_2555A:
                 addq.w  #1,d0
                 dbf     d7,loc_2555A
                 move.w  #COM_ENEMY_START,d0
-                moveq   #$1D,d7         ; that is technically a bug.
+                moveq   #$1F,d7         ; that is technically a bug.
                                         ;  As we're iterating enemy combatants, we should be moving value $1F instead
 loc_2556E:
                 
