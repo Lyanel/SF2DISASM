@@ -6,6 +6,6 @@
 
 p_pt_Portraits: dc.l pt_Portraits
                 includeIfVanillaRom "data\graphics\portraits\entries.asm"    ; Portraits
-				p_Icons:        dc.l Icons
-				Icons:          incbin "data/graphics/icons/icons.bin"                  ; expanded ROM required!
+				p_Icons:        dc.l Icons ; Added
+				Icons:          incbin "data/graphics/icons/icons.bin"      ; Added,  expanded ROM required!
                 align $1D8000

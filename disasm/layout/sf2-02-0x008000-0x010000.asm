@@ -6,8 +6,8 @@
 
                 include "code\common\stats\statsengine_1.asm"    ; Character stats engine
                 include "data\stats\allies\classes\classtypes.asm"    ; Class types table
-                include "code\common\stats\statsengine_2.asm"    ; Character stats engine			
-    		    align $9A9A
+                include "code\common\stats\statsengine_2.asm"    ; Character stats engine
+    		 ;   align $9A9A ; Added, temporary fix for garbled battle background following ranged attack transition
                 include "code\gameflow\special\debugmodebattleactions.asm"    ; Debug mode battle actions
                 include "code\gameflow\battle\battleactionsengine_1.asm"    ; Battle actions engine
                 include "data\stats\allies\classes\criticalhitsettings.asm"    ; Critical hit settings
@@ -22,7 +22,7 @@
                 wordAlignIfExpandedRom
                 include "code\gameflow\battle\battlefieldengine_2.asm"    ; Battlefield engine
                 include "code\gameflow\battle\aiengine.asm"    ; AI engine
-                ;include "data\stats\spells\spellnames.asm"    ; Spell names
+                ; include "data\stats\spells\spellnames.asm"    ; Spell names, moved
                 include "data\stats\allies\allynames.asm"    ; Ally names
                 include "data\stats\enemies\enemynames.asm"    ; Enemy names
 algn_FF87:      align $8000
