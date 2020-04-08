@@ -48,3 +48,22 @@ SpellElementsTable:
                 spellElement FIRE       ; KIWI
                 spellElement UNDEFINED1 ; SHINE
                 spellElement LIGHTNING  ; ODDEYE
+                spellElement UNDEFINED1 ; SPELL44
+                spellElement UNDEFINED1 ; SPELL45
+                spellElement UNDEFINED1 ; SPELL46
+                spellElement UNDEFINED1 ; SPELL47
+                spellElement UNDEFINED1 ; SPELL48
+                spellElement UNDEFINED1 ; SPELL49
+                spellElement UNDEFINED1 ; SPELL50
+                spellElement UNDEFINED1 ; SPELL51
+                spellElement UNDEFINED1 ; SPELL52
+                spellElement UNDEFINED1 ; SPELL53
+                spellElement UNDEFINED1 ; SPELL54
+                spellElement UNDEFINED1 ; SPELL55
+                spellElement UNDEFINED1 ; SPELL56
+                spellElement UNDEFINED1 ; SPELL57
+                spellElement UNDEFINED1 ; SPELL58
+                spellElement UNDEFINED1 ; SPELL59
+                spellElement UNDEFINED1 ; SPELL60
+                spellElement UNDEFINED1 ; SPELL61
+                spellElement UNDEFINED1 ; SPELL62

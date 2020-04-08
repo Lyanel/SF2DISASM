@@ -810,3 +810,174 @@ SpellDefs:      ; index      enum Spells : SPELL_*
                 radius 1
                 power 20
                     
+                index SPELL44             ; SPELL44
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL45             ; SPELL45
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL46             ; SPELL46
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL47             ; SPELL47
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL48             ; SPELL48
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL49             ; SPELL49
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL50             ; SPELL50
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL51             ; SPELL51
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL52             ; SPELL52
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL53             ; SPELL53
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL54             ; SPELL54
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL55             ; SPELL55
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL56             ; SPELL56
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL57             ; SPELL57
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL58             ; SPELL58
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL59             ; SPELL59
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL60             ; SPELL60
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL61             ; SPELL61
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    
+                index SPELL62             ; SPELL62
+                mpCost 0
+                animation NONE
+                properties &
+                    TYPE_ATTACK
+                range 0, 0
+                radius 0
+                power 0
+                    

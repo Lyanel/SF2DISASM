@@ -2100,7 +2100,7 @@ LoadIcon:
                 add.w   d1,d1
                 add.w   d2,d1
                 lsl.w   #6,d1
-                adda.w  d1,a0           ; icon offset
+                adda.l  d1,a0	; Edited
                 moveq   #$2F,d7 
 loc_13B8E:
                 
@@ -3768,7 +3768,7 @@ sub_14CB2:
                 add.w   d0,d0
                 add.w   d1,d0
                 lsl.w   #6,d0
-                adda.w  d0,a1
+                adda.l  d0,a1	; Edited
                 moveq   #$2F,d7 
 loc_14CC8:
                 

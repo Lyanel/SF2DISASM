@@ -20,9 +20,9 @@
                 include "data\graphics\tech\windowlayouts\namecharacterentrywindowlayout.asm"    ; Name character entry window layout
                 include "code\common\menus\menuengine_4.asm"    ; Menu engine
                 include "data\graphics\tech\windowlayouts\memberstatswindowlayout.asm"    ; Member stats window layout
-                include "data\stats\items\itemdefs.asm"    ; Item definitions
-                include "data\stats\spells\spelldefs.asm"    ; Spell definitions
-                include "data\stats\items\itemnames.asm"    ; Item names
+              ;  include "data\stats\items\itemdefs.asm"    ; Item definitions, moved
+              ;  include "data\stats\spells\spelldefs.asm"    ; Spell definitions, moved
+              ;  include "data\stats\items\itemnames.asm"    ; Item names, moved
                 wordAlign
                 include "data\stats\allies\classes\classnames.asm"    ; Class names
                 align $18000

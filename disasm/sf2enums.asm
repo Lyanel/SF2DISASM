@@ -99,7 +99,7 @@ COM_STATUS_MASK_ATTACK: equ $C000
 ; ---------------------------------------------------------------------------
 
 ; enum CharDef
-CHARDEF_STARTDATA_ENTRYSIZE: equ $6
+CHARDEF_STARTDATA_ENTRYSIZE: equ $A	; Edited
 CHAR_CLASS_LASTNONPROMOTED: equ $B
 CHAR_CLASS_FIRSTPROMOTED: equ $C
 CHAR_CLASS_EXTRALEVEL: equ $14
@@ -353,16 +353,16 @@ ENEMYAI_THRESHOLD_HEAL3: equ $1C
 ; ---------------------------------------------------------------------------
 
 ; enum Icon_Offsets
-ICON_OFFSET_CRACKS: equ $6F00
+ICON_OFFSET_CRACKS: equ $F240		; Edited
 
 ; ---------------------------------------------------------------------------
 
 ; enum IconDef_Idx
 ICONIDX_NOTHING: equ $7F
-ICONIDX_UNARMED: equ $80
-ICONIDX_HEAL: equ $82
-ICONIDX_JEWEL_OF_LIGHT: equ $92
-ICONIDX_JEWEL_OF_EVIL: equ $93
+ICONIDX_UNARMED: equ $100			; Edited
+ICONIDX_HEAL: equ $102				; Edited
+ICONIDX_JEWEL_OF_LIGHT: equ $141	; Edited
+ICONIDX_JEWEL_OF_EVIL: equ $142		; Edited
 
 ; ---------------------------------------------------------------------------
 
@@ -388,7 +388,7 @@ ITEMDEF_OFFSET_PRICE: equ $6
 ITEMDEF_OFFSET_TYPE: equ $8
 ITEMDEF_OFFSET_SPELL: equ $9
 ITEMDEF_OFFSET_STATINFO1: equ $A
-ITEM_MAX_IDX: equ $7F
+ITEM_MAX_IDX: equ $FF	            ; Edited
 
 ; ---------------------------------------------------------------------------
 
@@ -597,7 +597,136 @@ ITEM_LIFE_RING: equ $7C
 ITEM_COTTON_BALLOON: equ $7D
 ITEM_CHIRRUP_SANDALS: equ $7E
 ITEM_NOTHING: equ $7F
-ITEM_EQUIPPED: equ $80
+; ---------------------------------- Added
+ITEM_ITEM128: equ $80
+ITEM_ITEM129: equ $81
+ITEM_ITEM130: equ $82
+ITEM_ITEM131: equ $83
+ITEM_ITEM132: equ $84
+ITEM_ITEM133: equ $85
+ITEM_ITEM134: equ $86
+ITEM_ITEM135: equ $87
+ITEM_ITEM136: equ $88
+ITEM_ITEM137: equ $89
+ITEM_ITEM138: equ $8A
+ITEM_ITEM139: equ $8B
+ITEM_ITEM140: equ $8C
+ITEM_ITEM141: equ $8D
+ITEM_ITEM142: equ $8E
+ITEM_ITEM143: equ $8F
+ITEM_ITEM144: equ $90
+ITEM_ITEM145: equ $91
+ITEM_ITEM146: equ $92
+ITEM_ITEM147: equ $93
+ITEM_ITEM148: equ $94
+ITEM_ITEM149: equ $95
+ITEM_ITEM150: equ $96
+ITEM_ITEM151: equ $97
+ITEM_ITEM152: equ $98
+ITEM_ITEM153: equ $99
+ITEM_ITEM154: equ $9A
+ITEM_ITEM155: equ $9B
+ITEM_ITEM156: equ $9C
+ITEM_ITEM157: equ $9D
+ITEM_ITEM158: equ $9E
+ITEM_ITEM159: equ $9F
+ITEM_ITEM160: equ $A0
+ITEM_ITEM161: equ $A1
+ITEM_ITEM162: equ $A2
+ITEM_ITEM163: equ $A3
+ITEM_ITEM164: equ $A4
+ITEM_ITEM165: equ $A5
+ITEM_ITEM166: equ $A6
+ITEM_ITEM167: equ $A7
+ITEM_ITEM168: equ $A8
+ITEM_ITEM169: equ $A9
+ITEM_ITEM170: equ $AA
+ITEM_ITEM171: equ $AB
+ITEM_ITEM172: equ $AC
+ITEM_ITEM173: equ $AD
+ITEM_ITEM174: equ $AE
+ITEM_ITEM175: equ $AF
+ITEM_ITEM176: equ $B0
+ITEM_ITEM177: equ $B1
+ITEM_ITEM178: equ $B2
+ITEM_ITEM179: equ $B3
+ITEM_ITEM180: equ $B4
+ITEM_ITEM181: equ $B5
+ITEM_ITEM182: equ $B6
+ITEM_ITEM183: equ $B7
+ITEM_ITEM184: equ $B8
+ITEM_ITEM185: equ $B9
+ITEM_ITEM186: equ $BA
+ITEM_ITEM187: equ $BB
+ITEM_ITEM188: equ $BC
+ITEM_ITEM189: equ $BD
+ITEM_ITEM190: equ $BE
+ITEM_ITEM191: equ $BF
+ITEM_ITEM192: equ $C0
+ITEM_ITEM193: equ $C1
+ITEM_ITEM194: equ $C2
+ITEM_ITEM195: equ $C3
+ITEM_ITEM196: equ $C4
+ITEM_ITEM197: equ $C5
+ITEM_ITEM198: equ $C6
+ITEM_ITEM199: equ $C7
+ITEM_ITEM200: equ $C8
+ITEM_ITEM201: equ $C9
+ITEM_ITEM202: equ $CA
+ITEM_ITEM203: equ $CB
+ITEM_ITEM204: equ $CC
+ITEM_ITEM205: equ $CD
+ITEM_ITEM206: equ $CE
+ITEM_ITEM207: equ $CF
+ITEM_ITEM208: equ $D0
+ITEM_ITEM209: equ $D1
+ITEM_ITEM210: equ $D2
+ITEM_ITEM211: equ $D3
+ITEM_ITEM212: equ $D4
+ITEM_ITEM213: equ $D5
+ITEM_ITEM214: equ $D6
+ITEM_ITEM215: equ $D7
+ITEM_ITEM216: equ $D8
+ITEM_ITEM217: equ $D9
+ITEM_ITEM218: equ $DA
+ITEM_ITEM219: equ $DB
+ITEM_ITEM220: equ $DC
+ITEM_ITEM221: equ $DD
+ITEM_ITEM222: equ $DE
+ITEM_ITEM223: equ $DF
+ITEM_ITEM224: equ $E0
+ITEM_ITEM225: equ $E1
+ITEM_ITEM226: equ $E2
+ITEM_ITEM227: equ $E3
+ITEM_ITEM228: equ $E4
+ITEM_ITEM229: equ $E5
+ITEM_ITEM230: equ $E6
+ITEM_ITEM231: equ $E7
+ITEM_ITEM232: equ $E8
+ITEM_ITEM233: equ $E9
+ITEM_ITEM234: equ $EA
+ITEM_ITEM235: equ $EB
+ITEM_ITEM236: equ $EC
+ITEM_ITEM237: equ $ED
+ITEM_ITEM238: equ $EE
+ITEM_ITEM239: equ $EF
+ITEM_ITEM240: equ $F0
+ITEM_ITEM241: equ $F1
+ITEM_ITEM242: equ $F2
+ITEM_ITEM243: equ $F3
+ITEM_ITEM244: equ $F4
+ITEM_ITEM245: equ $F5
+ITEM_ITEM246: equ $F6
+ITEM_ITEM247: equ $F7
+ITEM_ITEM248: equ $F8
+ITEM_ITEM249: equ $F9
+ITEM_ITEM250: equ $FA
+ITEM_ITEM251: equ $FB
+ITEM_ITEM252: equ $FC
+ITEM_ITEM253: equ $FD
+ITEM_ITEM254: equ $FE
+; ----------------------------------
+ITEM_EQUIPPED: equ $4000       ; Edited
 ITEM_BROKEN: equ $8000
 
 ; ---------------------------------------------------------------------------
@@ -632,23 +761,24 @@ ITEMTYPE_BIT_MAGICAL: equ $7
 ; ---------------------------------------------------------------------------
 
 ; enum ItemEntry
-ITEM_OFFSET_IDXANDEQUIPBYTE: equ $1
-ITEM_MASK_IDXANDBROKEN: equ $807F
+;ITEM_OFFSET_IDXANDEQUIPBYTE: equ $1 Removed
+ITEM_MASK_IDXANDBROKEN: equ $80FF	; Edited
 
 ; ---------------------------------------------------------------------------
 
 ; enum ItemEntry_Idx
-ITEM_IDX_BITSIZE: equ $7
-ITEM_IDX_GOLD_CHESTS_START: equ $80
+ITEM_IDX_BITSIZE: equ $8			; Edited
+ITEM_IDX_GOLD_CHESTS_START: equ $100 ; Edited
 
 ; ---------------------------------------------------------------------------
 
 ; enum ItemEntry_Props
-ITEM_BIT_EQUIPPED: equ $7
+ITEM_BIT_EQUIPPED: equ $E		; Edited
+ITEM_UPPERBIT_EQUIPPED: equ $6	; Added
 ITEM_UPPERBIT_BROKEN: equ $7
 ITEM_BIT_ENEMYUSE: equ $D
 ITEM_BIT_BROKEN: equ $F
-ITEM_MASK_IDX: equ $7F
+ITEM_MASK_IDX: equ $FF			; Edited
 
 ; ---------------------------------------------------------------------------
 
@@ -905,6 +1035,27 @@ SPELL_AQUA: equ $28
 SPELL_KIWI: equ $29
 SPELL_SHINE: equ $2A
 SPELL_ODDEYE: equ $2B
+; ---------------------------------- Added
+SPELL_SPELL44: equ $2C
+SPELL_SPELL45: equ $2D
+SPELL_SPELL46: equ $2E
+SPELL_SPELL47: equ $2F
+SPELL_SPELL48: equ $30
+SPELL_SPELL49: equ $31
+SPELL_SPELL50: equ $32
+SPELL_SPELL51: equ $33
+SPELL_SPELL52: equ $34
+SPELL_SPELL53: equ $35
+SPELL_SPELL54: equ $36
+SPELL_SPELL55: equ $37
+SPELL_SPELL56: equ $38
+SPELL_SPELL57: equ $39
+SPELL_SPELL58: equ $3A
+SPELL_SPELL59: equ $3B
+SPELL_SPELL60: equ $3C
+SPELL_SPELL61: equ $3D
+SPELL_SPELL62: equ $3E
+; ----------------------------------
 SPELL_NOTHING: equ $3F
 SPELL_LV2: equ $40
 SPELL_LV3: equ $80
@@ -916,7 +1067,7 @@ SPELL_LV4: equ $C0
 SPELL_OFFSET_IDX: equ $0
 SPELL_MASK_RESIST: equ $3
 SPELL_OFFSET_LV: equ $6
-SPELL_DEFS_COUNTER: equ $63
+SPELL_DEFS_COUNTER: equ $FC	; Edited
 SPELL_MASK_LV: equ $C0
 SPELL_MASK_ENTRY: equ $FF
 SPELL_MASK_ALLRESIST: equ $C0FF
