@@ -21,7 +21,7 @@
                 wordAlignIfExpandedRom
                 include "code\gameflow\battle\battlefieldengine_2.asm"    ; Battlefield engine
                 include "code\gameflow\battle\aiengine.asm"    ; AI engine
-(Ligne 24 become a comment ( add ';'))   ;  include "data\stats\spells\spellnames.asm"    ; Spell names, moved
+                ;  include "data\stats\spells\spellnames.asm"    ; Spell names, moved
                 include "data\stats\allies\allynames.asm"    ; Ally names
                 include "data\stats\enemies\enemynames.asm"    ; Enemy names
 algn_FF87:      align $8000

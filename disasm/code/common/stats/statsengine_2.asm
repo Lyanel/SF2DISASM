@@ -3062,7 +3062,7 @@ loc_97A0:
                 ext.w   d2
                 move.w  d2,-(sp)
                 clr.w   d3
-				move.w  (a0)+,d3 ; Edited
+                move.w  (a0)+,d3 ; Edited
                 move.w  d3,CHAR_OFFSET_ITEM_0(a1)
                 move.w  (a0)+,d3 ; Edited
                 move.w  d3,CHAR_OFFSET_ITEM_1(a1)
